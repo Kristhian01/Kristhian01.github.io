@@ -101,6 +101,12 @@ body {
     padding: 20px;
 
 }
+.menuMobile .navMenuMobile .onlyHref{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
 
 .navMenuMobile li:hover {
     background-color: #F07506;
@@ -109,8 +115,9 @@ body {
 /* fin X hamburguesa mobile first */
 .logo {
     margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
+     display: flex;
+    justify-content: center; 
+
 }
 
 .logo img {
@@ -211,7 +218,6 @@ body {
     flex-direction: column;
     gap: 5rem;
     margin: 20px;
-
     height: 100vh;
 }
 
@@ -472,11 +478,11 @@ body {
     }
 
     .logo img {
-        width: 20%;
+        width: 10%;
     }
 
     .logoFooter img {
-        width: 20%;
+        width: 10%;
     }
 
     .generalStyleServices {
@@ -500,7 +506,9 @@ body {
     .footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 5;
+        grid-template-rows: 1fr 410px 1fr 1fr;
+        width:90%;
+        margin: auto;
         grid-template-areas: "logo logo logo"
                               "contactanos horario ubicacion"
                               "redes redes redes"
@@ -512,7 +520,7 @@ body {
     }
     .contacto{
         grid-area: contactanos;
-        display: flex;
+        
         flex-direction: column;
         align-items: flex-end;
         
@@ -523,18 +531,15 @@ body {
         justify-content: center;
     }
     .encuentranos{
-        grid-area: ubicacion;
-        
+        grid-area: ubicacion;  
     }
+    
     .redes{
         grid-area: redes;
     }
     .copy{
         grid-area: derechos;
     }
-
-
-
 
 }
 

@@ -46,6 +46,7 @@ var plantillasGallery = "";
 //Carga de contenido de los diferentes archivos html desktop
 $.get("../html/bebidas.html", function (data) {
     plantillaDrinks = data;
+    
 });
 
 $.get("../html/eventos.html", function (data) {

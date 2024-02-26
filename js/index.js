@@ -43,6 +43,13 @@ opcionesMenu.forEach(opcion => {
     });
 });
 
+const opcionesMenuDos = document.querySelectorAll('#menuDesplegable li');
+opcionesMenuDos.forEach(opcion => {
+    opcion.addEventListener('click', function () {
+        closeMenu();
+    });
+});
+
 /**fin funcion abrir cerrar menu */
 
 
