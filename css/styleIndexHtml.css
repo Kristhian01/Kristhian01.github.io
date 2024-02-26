@@ -22,9 +22,10 @@ body {
     z-index: 1;
 }
 
-.toggle{
+.toggle {
     cursor: pointer;
 }
+
 /* Inicio X hamburguesa mobile first */
 .closeHambur {
     position: absolute;
@@ -89,6 +90,12 @@ body {
     text-transform: uppercase;
 }
 
+.navMenuMobile li{
+    color:#000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 .menuMobile ul {
     padding-left: 0;
 }
@@ -101,7 +108,8 @@ body {
     padding: 20px;
 
 }
-.menuMobile .navMenuMobile .onlyHref{
+
+.menuMobile .navMenuMobile .onlyHref {
     display: block;
     width: 100%;
     height: 100%;
@@ -115,13 +123,13 @@ body {
 /* fin X hamburguesa mobile first */
 .logo {
     margin-top: 1.5rem;
-     display: flex;
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
 
 }
 
 .logo img {
-    width: 40%;
+    /* width: 40%; */
 }
 
 /* Estilos carousel mobile */
@@ -176,7 +184,7 @@ body {
 .generalStyleServices p {
     color: #fff;
     line-height: 30px;
-    text-align: justify;
+    /* text-align: justify; */
 
 }
 
@@ -186,6 +194,7 @@ body {
     display: block;
 
 }
+
 .generalStyleServices p span {
     color: #000;
     border-radius: 1rem;
@@ -194,7 +203,7 @@ body {
     padding: 10px;
 }
 
-.generalStyleServices span:hover{
+.generalStyleServices span:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -228,7 +237,7 @@ body {
 }
 
 .logoFooter img {
-    width: 40%;
+    /* width: 40%; */
 }
 
 /* fin logo footer */
@@ -410,11 +419,11 @@ body {
     }
 
     .logo img {
-        width: 20%;
+        /* width: 20%; */
     }
 
     .logoFooter img {
-        width: 20%;
+        /* width: 20%; */
     }
 
     ;
@@ -478,21 +487,22 @@ body {
     }
 
     .logo img {
-        width: 10%;
+        /* width: 10%; */
     }
 
     .logoFooter img {
-        width: 10%;
+        /* width: 10%; */
     }
 
     .generalStyleServices {
         width: 40%;
     }
-    .generalStyleServices img{
+
+    .generalStyleServices img {
         width: 100%;
     }
-    
-   
+
+
     .generalStyleServices p {
         margin-top: auto;
     }
@@ -503,41 +513,45 @@ body {
         gap: 0;
     }
 
-    .footer{
+    .footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 410px 1fr 1fr;
-        width:90%;
+        width: 90%;
         margin: auto;
         grid-template-areas: "logo logo logo"
-                              "contactanos horario ubicacion"
-                              "redes redes redes"
-                              "derechos derechos derechos";
+            "contactanos horario ubicacion"
+            "redes redes redes"
+            "derechos derechos derechos";
     }
 
-    .logoFooter{
+    .logoFooter {
         grid-area: logo;
     }
-    .contacto{
+
+    .contacto {
         grid-area: contactanos;
-        
+
         flex-direction: column;
         align-items: flex-end;
-        
+
     }
-    .hours{
+
+    .hours {
         grid-area: horario;
         display: flex;
         justify-content: center;
     }
-    .encuentranos{
-        grid-area: ubicacion;  
+
+    .encuentranos {
+        grid-area: ubicacion;
     }
-    
-    .redes{
+
+    .redes {
         grid-area: redes;
     }
-    .copy{
+
+    .copy {
         grid-area: derechos;
     }
 
