@@ -1,0 +1,75 @@
+.styleEventos {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.textEventos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.textEventos h1 {
+    text-transform: uppercase;
+    color: #F07506;
+}
+
+.textEventos p {
+    font-size: 1.3rem;
+    line-height: 30px;
+    text-align: justify;
+    color: #fff;
+}
+
+.styleGeneralEventos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.styleGeneralEventos h2 {
+    color: #F07506;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.styleGeneralEventos p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.styleGeneralEventos img {
+    border-radius: 5rem 0px 5rem 0px;
+}
+
+.line {
+    border-bottom: 2px solid #fff;
+    width: 50%;
+    margin: auto;
+}
+.breadcrumbsEvents{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.breadcrumbsEvents a{
+    color: #fff;
+}
+.breadcrumbsEvents span{
+    color: #F07506;
+}
+
+@media(min-width: 1024px){
+    .styleGeneralEventos img{
+        width: 50%;
+    }
+}

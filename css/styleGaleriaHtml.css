@@ -1,0 +1,54 @@
+.textGaleria{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.textGaleria h1{
+    text-transform: uppercase;
+    color: #F07506;
+}
+
+.textGaleria p{
+    font-size: 1.3rem;
+    line-height: 30px;
+    text-align: justify;
+    color: #fff;
+}
+#galeria .col-lg-4 {
+
+    padding: 25px;
+}
+
+#galeria img {
+    width: 100%;
+
+}
+
+#galeria img:hover {
+    border: 5px solid #fff;
+    animation: efecto 4s ease-in;
+    cursor: pointer;
+}
+
+@keyframes efecto {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.1;
+    }
+}
+.breadcrumbsGallery{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.breadcrumbsGallery a{
+    color: #fff;
+}
+.breadcrumbsGallery span{
+    color: #F07506;
+}

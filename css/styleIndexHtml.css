@@ -1,0 +1,558 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Roboto;
+}
+
+body {
+    background-color: #000;
+}
+
+.svgHambur {
+
+    margin-top: 20px;
+    margin-left: 10px;
+    position: fixed;
+    z-index: 1;
+}
+
+.toggle{
+    cursor: pointer;
+}
+/* Inicio X hamburguesa mobile first */
+.closeHambur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin-top: 40px;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+.secondMenuMobile {
+    position: fixed;
+    /*justify-content: start;*/
+    /* justify-content: start; */
+    /* align-items: start; */
+    top: 0;
+    padding-top: 1rem;
+    width: 80%;
+    left: -80%;
+    /*esto esconde el segundo menu a la izquierda*/
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 1;
+
+    &.active {
+        left: 0;
+
+    }
+
+    transition: left 0.5s ease-in-out;
+
+}
+
+.prueba {
+    z-index: 0;
+}
+
+.menuMobile {
+    margin-top: 6rem;
+    width: 100%;
+
+
+}
+
+.redesMobile {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+
+.navMenuMobile li a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menuMobile ul {
+    padding-left: 0;
+}
+
+.navMenuMobile li {
+    background-color: #7EFF88;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 20px;
+
+}
+
+.navMenuMobile li:hover {
+    background-color: #F07506;
+}
+
+/* fin X hamburguesa mobile first */
+.logo {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 40%;
+}
+
+/* Estilos carousel mobile */
+.slider {
+    overflow: hidden;
+    margin-top: 1.5rem;
+    /* width: 80%;
+    margin: auto;   */
+
+}
+
+.slider--inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.6s ease-in;
+    align-items: center;
+
+}
+
+.slider--inner img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+/* Fin Estilos carousel mobile */
+
+/* Servicios*/
+.servicios {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 1.5rem;
+}
+
+/* Inicio generalStyleServices */
+.generalStyleServices {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+
+}
+
+.generalStyleServices h2 {
+    color: #F07506;
+}
+
+.generalStyleServices p {
+    color: #fff;
+    line-height: 30px;
+    text-align: justify;
+
+}
+
+.generalStyleServices img::after {
+    content: attr(alt);
+    color: #fff;
+    display: block;
+
+}
+.generalStyleServices p span {
+    color: #000;
+    border-radius: 1rem;
+    border: solid;
+    background-color: #F07506;
+    padding: 10px;
+}
+
+.generalStyleServices span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* Fin generalStyleServices */
+/*Fin servicios*/
+
+/*Linea separación*/
+.separacion {
+    margin-top: 1rem;
+    border-bottom: 5px solid #fff;
+    margin-bottom: 1rem;
+}
+
+/*fin linea separación*/
+
+/*Footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 20px;
+
+    height: 100vh;
+}
+
+/* logo footer */
+.logoFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.logoFooter img {
+    width: 40%;
+}
+
+/* fin logo footer */
+
+/* footer Contacto */
+
+.contacto h2 {
+    color: #F07506;
+    text-transform: uppercase;
+}
+
+.contacto p {
+    color: #fff;
+}
+
+.location {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.location a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.location a:hover {
+    color: #F07506;
+}
+
+.mail h3 {
+    color: #fff;
+}
+
+.mail {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mail a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mail a:hover {
+    color: #F07506;
+}
+
+.whatsapp {
+    margin-top: 1rem;
+}
+
+/* fin footer contacto */
+
+/* footer horario de apertura */
+
+
+.openingHours {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.openingHours h2 {
+    text-transform: uppercase;
+    color: #F07506;
+}
+
+.openingHours p {
+    color: #fff;
+}
+
+.openingHours p span {
+    text-transform: uppercase;
+}
+
+.openingHours h3 {
+    color: #F07506;
+    text-transform: uppercase;
+}
+
+/* fin horario de apertura */
+
+/* footer Encuentranos */
+
+.encuentranos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.encuentranos h2 {
+    color: #F07506;
+    text-transform: uppercase;
+}
+
+.findUs .encuentranos iframe {
+    height: 350px;
+}
+
+/* Fin encuentranos */
+/* inicio redes footer */
+
+.redes h2 {
+    color: #F07506;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.redesFooter {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+.redesFooter a {
+    margin-top: 1rem;
+}
+
+.redesFooter a:hover {
+    animation-name: aumentar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*copyright*/
+.copy p {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+/*fin copyright*/
+
+/* fin redes footer */
+/* Fin footer */
+
+/*Media query para pantallas medianas(768px hasta 1024px)*/
+@media(min-width: 768px) {
+
+    .footer {
+
+        height: none;
+    }
+
+    /* Nuevo div para estilos pantallas medianas tipo table as 1024px */
+    .responsiveScreenMd {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .findUs {
+        width: 70%;
+        margin: auto;
+    }
+
+    .findUs .encuentranos h2 {
+        margin: auto;
+    }
+
+    .logo img {
+        width: 20%;
+    }
+
+    .logoFooter img {
+        width: 20%;
+    }
+
+    ;
+
+
+}
+
+/*Cuando sea menor o igual a esa medida se aplican estos estilos*/
+@media(max-width: 1024px) {
+    nav {
+        display: none;
+    }
+}
+
+
+/*Fin Media query para pantallas medianas(768px hasta 1024px)*/
+
+/* Media query para pantallas grandes(1024 en adelante ) */
+
+/* Aqui que se apliquen estas reglas cuando los px sean igual o superior a 1024 */
+@media(min-width: 1024px) {
+    .toggle {
+        display: none;
+    }
+
+    nav {
+        display: block;
+
+    }
+
+    nav ul {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+        padding: 20px;
+
+        display: flex;
+    }
+
+    nav ul li:hover {
+        transition: 0.6s;
+        cursor: pointer;
+        color: hsl(28, 100%, 60%);
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    nav ul li a:hover {
+        transition: 0.6s;
+        color: hsl(28, 100%, 60%);
+    }
+
+    .logo img {
+        width: 20%;
+    }
+
+    .logoFooter img {
+        width: 20%;
+    }
+
+    .generalStyleServices {
+        width: 40%;
+    }
+    .generalStyleServices img{
+        width: 100%;
+    }
+    
+   
+    .generalStyleServices p {
+        margin-top: auto;
+    }
+
+    .servicios {
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        gap: 0;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 5;
+        grid-template-areas: "logo logo logo"
+                              "contactanos horario ubicacion"
+                              "redes redes redes"
+                              "derechos derechos derechos";
+    }
+
+    .logoFooter{
+        grid-area: logo;
+    }
+    .contacto{
+        grid-area: contactanos;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+    .hours{
+        grid-area: horario;
+        display: flex;
+        justify-content: center;
+    }
+    .encuentranos{
+        grid-area: ubicacion;
+        
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .copy{
+        grid-area: derechos;
+    }
+
+
+
+
+}
+
+@media(min-width: 1200px) {
+    .servicios {
+        flex-wrap: nowrap;
+
+    }
+
+    .generalStyleServices img {
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+
+/* Fin Media query para pantallas grandes(1024 en adelante ) */

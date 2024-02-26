@@ -1,0 +1,90 @@
+.styleBebidas {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.textBebidas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.textBebidas h1 {
+    text-transform: uppercase;
+    color: #F07506;
+}
+
+.textBebidas p {
+    font-size: 1.3rem;
+    line-height: 30px;
+    text-align: justify;
+    color: #fff;
+}
+
+.styleGeneralBebidas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.styleGeneralBebidas h2 {
+    color: #F07506;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.styleGeneralBebidas p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.styleGeneralBebidas h3 {
+    color: #F07506;
+}
+
+.styleGeneralBebidas img {
+    width: 30%;
+    margin: auto;
+}
+
+.styleGeneralBebidas ul li {
+    color: #fff;
+    margin: 10px;
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+.line {
+    border-bottom: 2px solid #fff;
+    width: 50%;
+    margin: auto;
+}
+
+.breadcrumbsDrinks {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.breadcrumbsDrinks a {
+    color: #fff;
+}
+
+.breadcrumbsDrinks span {
+    color: #F07506;
+}
+
+@media(min-width: 1024px) {
+    .styleGeneralBebidas img {
+        width: 20%;
+    }
+}
