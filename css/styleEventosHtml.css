@@ -40,15 +40,17 @@
     text-transform: uppercase;
 }
 
+
 .styleGeneralEventos p {
     color: #fff;
-    font-size: 1.3rem;
     line-height: 30px;
-    text-align: justify;
+    
 }
 
 .styleGeneralEventos img {
     border-radius: 5rem 0px 5rem 0px;
+    width: 85%;
+    
 }
 
 .line {
@@ -68,8 +70,16 @@
     color: #F07506;
 }
 
+
+
 @media(min-width: 1024px){
     .styleGeneralEventos img{
         width: 40%;
     }
+    .eventosStyle{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
 }
